@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>REPLICATION2</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            margin: 0px;
+            padding: 0px;
+            background-color: white;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            line-height:9px
+        }
+
+        /* Pricing Container */
+        .pricing-container {
+            display: flex;
+            flex-wrap:nowrap;
+            justify-content: left;
+            align-items: center;
+            padding: 10px;
+            gap: 30px;
+            text-align: center;
+            max-width: fit-content;
+            width: 100%
+        }
+
+
+        /* Pricing Card */
+        .pricing-card {
+            background-color: #f3e4de;
+            margin: 0%;
+            padding: 0;
+            width: 200px;  
+            max-width: 200%;            
+            text-align: center;
+        }
+
+        .pricing-card h2 {
+            font-size: 1.0rem;
+            font-weight: bold;
+            width: 200px;  
+            max-width: 200%;       
+        }
+
+        .pricing-card h3 {
+            font-size:1.0rem;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            width: 200px;  
+            max-width: 200%;       
+    
+        }
+
+        .pricing-card ul {
+            list-style: none;
+            padding: 0;
+            
+        }
+
+        .pricing-card ul li {
+            margin: 10px 0;
+            font-size: 0.5rem;
+            font-weight: 50;
+            
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .check {
+            background: none;
+            border: none;
+            
+            box-shadow: none;
+            
+        }
+
+        .cross {
+            color: black;
+            
+        }
+
+        .signup-btn {
+            background-color:rgb(238, 76, 17);
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius:5px;
+            cursor: pointer;
+            font-size: 0.5rem;
+        }
+        
+
+ /* Responsive Design */
+ @media screen and (max-width: 768px){
+    .pricing-container{
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+    .pricing-card{
+        width: 300px;
+        max-width: 200%;
+        margin-bottom: 15px;
+    }
+ }
+            
+
+    </style>
+</head>
+<body>
+
+    <div class="pricing-container">
+        <!-- Basic Plan -->
+        <div class="pricing-card">
+            <h2>Ladies in Tech-Basic</h2>
+            <h3>$9.99 / month</h3>
+            <ul>
+                <li class="check">✅ 10GB Storage</li>
+                <li class="check">✅ 1 User</li>
+                <li class="cross">🚫
+                    No Support</li>
+            </ul>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+
+        <!-- Standard Plan -->
+        <div class="pricing-card">
+            <h2>Ladies in Tech-Standard</h2>
+            <h3>$19.99 / month</h3>
+            <ul>
+                <li class="check">✅ 50GB Storage</li>
+                <li class="check">✅ 5 Users</li>
+                <li class="check">✅ Phone & Email Support</li>
+            </ul>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="pricing-card">
+            <h2>Ladies in Tech-Premium</h2>
+            <h3>$49.99 / month</h3>
+            <ul>
+                <li class="check">✅ 100GB Storage</li>
+                <li class="check">✅ 10 Users</li>
+                <li class="check">✅ 24/7 Support</li>
+            </ul>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+    </div>
+
+</body>
+</html>
